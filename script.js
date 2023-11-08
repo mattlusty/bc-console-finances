@@ -47,9 +47,9 @@ console.log("Total Change:", totalChange);
 
 // Average Change (not including first month - because the change in unknown)
 
-var averageChange = totalChange / months - 1;
+var averageChange = totalChange / (months - 1);
 
-console.log("Average Change:", averageChange);
+console.log("Average Change:", averageChange.toFixed(2));
 
 // console.log("----------");
 

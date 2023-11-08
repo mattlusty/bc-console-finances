@@ -1,8 +1,11 @@
+console.log("Financial Analysis");
+console.log("------------------");
+
 var months = finances.length;
 
 console.log("Total Months:", months);
 
-console.log("----------");
+// console.log("----------");
 
 var sum = 0;
 
@@ -13,7 +16,7 @@ for (i in finances) {
   sum += finances[i][1];
 }
 
-console.log("Total Profit/Loss:", sum);
+console.log("Total Profit/Loss: $" + sum);
 
 // Profit/Loss changes per month
 
@@ -24,9 +27,11 @@ for (var i = 1; i < finances.length; i++) {
   finances[i][2] = finances[i][1] - finances[i - 1][1];
 }
 
-console.log("Finances array (with added monthly change in profit):", finances);
+// not required - but useful to see for debugging
 
-console.log("----------");
+// console.log("Finances array (with added monthly change in profit):", finances);
+
+// console.log("----------");
 
 // Total of all changes
 
@@ -38,7 +43,7 @@ for (var i = 1; i < finances.length; i++) {
 
 console.log("Total Change:", totalChange);
 
-console.log("----------");
+// console.log("----------");
 
 // Average Change (not including first month - because the change in unknown)
 
@@ -46,7 +51,7 @@ var averageChange = totalChange / months - 1;
 
 console.log("Average Change:", averageChange);
 
-console.log("----------");
+// console.log("----------");
 
 // Calculating the Greatest and Least Change
 
@@ -69,10 +74,12 @@ console.log(
   "Greatest Decrease in Profit: " + finances[least][0] + " ($" + finances[least][2] + ")"
 );
 
-console.log("----------");
+// console.log("----------");
 
-// Sorting
+// Sorting (to validate above method)
 
 var sorted = finances.toSorted((a, b) => a[2] - b[2]);
 
-console.log("Sorted:", sorted);
+// not required - but useful to see for debugging
+
+// console.log("Sorted:", sorted);

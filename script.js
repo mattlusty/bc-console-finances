@@ -21,7 +21,7 @@ console.log("Total Profit/Loss:", sum);
 finances[0][2] = null;
 
 for (var i = 1; i < finances.length; i++) {
-  finances[i - 1][2] = finances[i - 1][1] - finances[i][1];
+  finances[i][2] = finances[i][1] - finances[i - 1][1];
 }
 
 console.log("Finances:", finances);
@@ -30,7 +30,7 @@ console.log("----------");
 
 // Total of all changes
 
-var totalChange;
+var totalChange = 0;
 
 for (var i = 1; i < finances.length; i++) {
   totalChange += finances[i][2];

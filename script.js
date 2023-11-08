@@ -70,3 +70,9 @@ console.log(
 );
 
 console.log("----------");
+
+// Sorting
+
+var sorted = finances.toSorted((a, b) => a[2] - b[2]);
+
+console.log("Sorted:", sorted);

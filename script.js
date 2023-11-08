@@ -24,7 +24,7 @@ for (var i = 1; i < finances.length; i++) {
   finances[i][2] = finances[i][1] - finances[i - 1][1];
 }
 
-console.log("Finances:", finances);
+console.log("Finances array (with added monthly change in profit):", finances);
 
 console.log("----------");
 

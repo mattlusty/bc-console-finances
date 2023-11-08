@@ -47,3 +47,26 @@ var averageChange = totalChange / months - 1;
 console.log("Average Change:", averageChange);
 
 console.log("----------");
+
+// Calculating the Greatest and Least Change
+
+var greatest = 1;
+var least = 1;
+
+for (var i = 1; i < finances.length; i++) {
+  if (finances[i][2] > finances[greatest][2]) {
+    greatest = i;
+  }
+  if (finances[i][2] < finances[least][2]) {
+    least = i;
+  }
+}
+
+console.log(
+  "Greatest Change in Profit: " + finances[greatest][0] + " : ($" + finances[greatest][2] + ")"
+);
+console.log(
+  "Greatest Decrease in Profit: " + finances[least][0] + " : ($" + finances[least][2] + ")"
+);
+
+console.log("----------");

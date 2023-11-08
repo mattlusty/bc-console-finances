@@ -27,3 +27,15 @@ for (var i = 1; i < finances.length; i++) {
 console.log("Finances:", finances);
 
 console.log("----------");
+
+// Total of all changes
+
+var totalChange;
+
+for (var i = 1; i < finances.length; i++) {
+  totalChange += finances[i][2];
+}
+
+console.log("Total Change:", totalChange);
+
+console.log("----------");

@@ -63,10 +63,10 @@ for (var i = 1; i < finances.length; i++) {
 }
 
 console.log(
-  "Greatest Change in Profit: " + finances[greatest][0] + " : ($" + finances[greatest][2] + ")"
+  "Greatest Change in Profit: " + finances[greatest][0] + " ($" + finances[greatest][2] + ")"
 );
 console.log(
-  "Greatest Decrease in Profit: " + finances[least][0] + " : ($" + finances[least][2] + ")"
+  "Greatest Decrease in Profit: " + finances[least][0] + " ($" + finances[least][2] + ")"
 );
 
 console.log("----------");

@@ -39,3 +39,11 @@ for (var i = 1; i < finances.length; i++) {
 console.log("Total Change:", totalChange);
 
 console.log("----------");
+
+// Average Change (not including first month - because the change in unknown)
+
+var averageChange = totalChange / months - 1;
+
+console.log("Average Change:", averageChange);
+
+console.log("----------");
